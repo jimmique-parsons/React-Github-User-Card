@@ -21,12 +21,14 @@ class App extends React.Component {
           <h1>Github User Cards</h1>
           <div className="container">
             <div className="card">
-              <h4>{this.state.userData.login}</h4>
               <img 
                 className="card__avatar"
                 alt={this.state.userData.login}
                 src={this.state.userData.avatar_url}
               />
+               <h4>{this.state.userData.login}</h4>
+               <p>Bio: {this.state.userData.bio}</p>
+               <p>Followers: {this.state.userData.followers}</p>
             </div>
           </div>
         </header>
